@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("[api/funcionario")]
+    [Route("api/funcionario")]
     public class FuncionarioController : ControllerBase
     {
         //POST: api/funcionario/cadastrar
         [HttpPost]
-        [Route("casadastro")]
+        [Route("cadastrar")]
         public Funcionario Cadatrar(Funcionario funcionario)
         {
             funcionario.Nome += "cadastrado"; 
