@@ -30,7 +30,7 @@ namespace API
         {
             services.AddDbContext<Context>
             (
-                options => options.UseInMemoryDatabase("DataBase");
+                options => options.UseInMemoryDatabase("DataBase")
             );
 
             services.AddControllers();
