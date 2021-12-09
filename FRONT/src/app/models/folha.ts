@@ -1,4 +1,4 @@
-export interface Produto {
+export interface Folha {
     id?: number;
     IdFuncionario: number;
     CaixaTexto: string;

@@ -13,12 +13,6 @@ export class CadastrarFolhaComponent implements OnInit {
     ValorHora!: number;
     MesAno!: string;
 
-    constructor(
-        private folhaService: FolhaService,
-        private router: Router
-    ) {}
-
-
     cadastrar(): void {
         let folha: Folha = {
             Id: this.Id,
