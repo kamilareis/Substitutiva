@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastrar Folha Pagamento</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Id:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="Id" />
+        </mat-form-field>
+        <mat-form-field class="input" id="descricao">
+            <mat-label for="descricao">Caixa de Texto:</mat-label>
+            <input
+                matInput
+                type="text"
+                name="descricao"
+                [(ngModel)]="CaixaTexto"
+            />
+        </mat-form-field>
+        <mat-form-field class="input" id="quantidade">
+            <mat-label for="quantidade">Id do Funcionario:</mat-label>
+            <input
+                matInput
+                type="text"
+                name="quantidade"
+                [(ngModel)]="IdFuncionario"
+            />
+        </mat-form-field>
+        <mat-form-field class="input" id="preco">
+            <mat-label for="preco">Valor da Hora:</mat-label>
+            <input matInput type="text" name="preco" [(ngModel)]="ValorHora" />
+        </mat-form-field>
+        <mat-form-field class="input" id="preco">
+            <mat-label for="preco">Mes e Ano da Folha: </mat-label>
+            <input matInput type="text" name="preco" [(ngModel)]="MesAno" />
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button color="warn" (click)="cadastrar()">
+        Cadastrar
+    </button>
+</mat-card>

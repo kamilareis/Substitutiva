@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastrar Funcionário</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Id:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="Id" />
+        </mat-form-field>
+        <mat-form-field class="input" id="descricao">
+            <mat-label for="descricao">CPF do Funcionário:</mat-label>
+            <input
+                matInput
+                type="text"
+                name="descricao"
+                [(ngModel)]="Cpf"
+            />
+        </mat-form-field>
+        <mat-form-field class="input" id="quantidade">
+            <mat-label for="quantidade">Nome:</mat-label>
+            <input
+                matInput
+                type="text"
+                name="quantidade"
+                [(ngModel)]="Nome"
+            />
+        </mat-form-field>
+    <button mat-raised-button color="warn" (click)="cadastrar()">
+        Cadastrar
+    </button>
+</mat-card>

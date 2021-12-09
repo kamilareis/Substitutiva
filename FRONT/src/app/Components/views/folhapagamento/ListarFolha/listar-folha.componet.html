@@ -1,0 +1,29 @@
+<a mat-raised-button color="primary" routerLink="/produto/cadastrar">
+    <mat-icon mat-list-icon>add</mat-icon>
+    Nova Folha de Pagamento
+</a>
+<table mat-table [dataSource]="folhapagamento" class="table mat-elevation-z8">
+   
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>#</th>
+        <td mat-cell *matCellDef="let folhapagamento">{{ folhapagamento.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="IdFuncionario">
+        <th mat-header-cell *matHeaderCellDef>Id do funcionário</th>
+        <td mat-cell *matCellDef="let folhapagamento">{{ folhapagamento.IdFuncionario }}</td>
+    </ng-container>
+    <ng-container matColumnDef="CaixaTexto">
+        <th mat-header-cell *matHeaderCellDef>Caixa de Texto</th>
+        <td mat-cell *matCellDef="let folhapagamento">{{ folhapagamento.CaixaTexto }}</td>
+    </ng-container>
+    <ng-container matColumnDef="ValorHora">
+        <th mat-header-cell *matHeaderCellDef>Valor da Hora</th>
+        <td mat-cell *matCellDef="let folhapagamento">{{ folhapagamento.ValorHora }}</td>
+    </ng-container>
+    <ng-container matColumnDef="MesAno">
+        <th mat-header-cell *matHeaderCellDef>Mês e Ano da Folha</th>
+        <td mat-cell *matCellDef="let folhapagamento">{{ folhapagamento.MesAno }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="visualizar"></tr>
+    <tr mat-row *matRowDef="let row; columns: visualizar"></tr>
+</table>
